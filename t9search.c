@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
       bool flag = read_line();
       if (flag == false)
       {
-        printf("Your name or number is too long!\n");
+        fprintf(stderr, "Your name or number is too long!\n");
         return 1;
       }
       if (name_string[0] == '\0')            //blank spot check
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
       flag = read_line();
       if (flag == false)
       {
-        printf("Your name or number is too long!\n");
+        fprintf(stderr, "Your name or number is too long!\n");
         return 1;
       }
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
   {
     if (num_arg_check(1, argv) == false)
        return 1;
-    printf("You have selected search by non-breaking sequence -------------\n"); 
+    fprintf(stderr, "You have selected search by non-breaking sequence -------------\n"); 
     if (output_print(0, argv, 0) == false)
        return 1;
   }
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
   {
     if (num_arg_check(2, argv) == false)
        return 1;
-    printf("You have selected search by breaking sequence -------------\n");
+    fprintf(stderr, "You have selected search by breaking sequence -------------\n");
     if (output_print(1, argv, 0) == 0)
        return 1;
   }
@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
        return 1;
     if (num_arg_check(3, argv) == false)
        return 1;
-    printf("You have selected search by non-breaking sequence, with %s errors check -------------\n", argv[3]);
+    fprintf(stderr, "You have selected search by non-breaking sequence, with %s errors check -------------\n", argv[3]);
     int x = atoi(argv[3]);
     if (output_print(2, argv, x) == 0)
        return 1;
@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
        return 1;
     if (num_arg_check(2, argv) == false)
        return 1;
-    printf("You have selected search by non-breaking sequence, with %s errors check -------------\n", argv[2]);
+    fprintf(stderr, "You have selected search by non-breaking sequence, with %s errors check -------------\n", argv[2]);
     int x = atoi(argv[2]);
     if (output_print(3, argv, x) == 0)
        return 1;
@@ -163,7 +163,7 @@ bool output_print(int control_switch, char *arg[], int input_l)
       bool flag = read_line();
       if (flag == false)
       {
-        printf("Your name or number is too long!\n");
+        fprintf(stderr, "Your name or number is too long!\n");
         return false;
       }
 
@@ -190,7 +190,7 @@ bool output_print(int control_switch, char *arg[], int input_l)
       flag = read_line();
       if (flag == false)
       {
-        printf("Your name or number is too long!\n");
+        fprintf(stderr, "Your name or number is too long!\n");
         return false;
       }
 
@@ -232,7 +232,7 @@ bool output_print(int control_switch, char *arg[], int input_l)
     
   if(count_output_contacts == 0)
   {
-    printf("Not found\n");
+    fprintf(stderr, "Not found\n");
     return true;  
   }
   return true;  
