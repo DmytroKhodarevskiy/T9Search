@@ -37,7 +37,7 @@ To run the T9Search program, ensure that you have the following:
 
 Compile the program by running the following command:
 
-```makefile
+```
 gcc -std=c99 -lm -Wall -Werror -Wextra -pedantic -o t9search t9search.c
 ```
 
@@ -50,11 +50,11 @@ make
 
 Run the program by executing the following command:
 
-```bash
+```
 ./t9search < <input_file> <numbers_sequence>
 ```
 > or
-```bash
+```
 ./t9search <numbers_sequence> < <input_file>
 ```
 
@@ -210,7 +210,7 @@ Will result the program to act as if the file was empty and expect the input by 
 ```
 ./t9search 
 ```
->and
+>**and**
 ```
 ./t9search < contacts.txt
 ```
