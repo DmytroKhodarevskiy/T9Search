@@ -8,7 +8,7 @@ The program filters the contacts based on user input and displays the matching r
 
 ## Features
 
-- Read contacts from a text file in the LF format.
+- Read contacts from a text file in the LF format for Unix / CRLF for Windows.
 - Filter contacts based on user input.
 - Utilize T9 predictive text input method for efficient searching.
 - Display matching contacts with their associated phone numbers.
@@ -24,7 +24,7 @@ The program filters the contacts based on user input and displays the matching r
 To run the T9Search program, ensure that you have the following:
 
 - A C compiler (such as GCC) installed on your system.
-- A text file containing contacts in the LF format.
+- A text file containing contacts in the LF/CRLF format.
 
 
 <br>
