@@ -87,7 +87,7 @@ To use the T9Search program, follow these steps:
 
 - All the contacts must be in the file that you specify when running the program.
 - The file must be in the same directory as the program.
-- The contacts file should be in the Unix format, with each contact listed on a new line, separating the name and phone number with a newline.
+- The contacts file should be in the Unix/Windows format, with each contact listed on a new line, separating the name and phone number with a newline.
 
 <br>
 
